@@ -7,11 +7,27 @@ alias buildapp="python3 setup.py sdist bdist_wheel"
 
 alias ll="ls -lt"
 
+# cd BDS Wallet 
+alias bdswallet='cd ~/pCloud\ Drive/Account\ shares/AppCoins/appcoins_wallet'
+
+# cd Trivial Drive AppCoins
+alias trivialdriveappcoins='cd ~/pCloud\ Drive/Account\ shares/AppCoins/trivial_drive_appcoins'
+
+# cd Trivial Drive ASF
+alias trivialdriveasf='cd ~/pCloud\ Drive/Account\ shares/AppCoins/trivial_drive_asfoundation'
+
+# List alias
+alias listalias='cat ~/.zshrc| grep alias'
+
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 export PATH=~/mongodb/bin:$PATH
 
 . `brew --prefix`/etc/profile.d/z.sh
+
+# INFURA
+export INFURA_API_KEY=HcTfE7Vti0tNnSL4RJxA
+
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/christopher/.oh-my-zsh
